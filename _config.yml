@@ -1,2 +1,4 @@
 name: Aaron Buckles
 markdown: kramdown
+plugins:
+  - jekyll-sitemap
