@@ -2,7 +2,7 @@ body {
   	margin: 60px auto;
   	width: 70%;
 	font-family: 'Merriweather', serif;
-	background-color: #ddd;
+	background-color: #F0E7D8;
 }
 
 nav ul, footer ul {
@@ -24,6 +24,7 @@ a {
 
 a:hover {
 	text-decoration: underline;
+	color: #A63A50;
 }
 
 h1 {
@@ -39,6 +40,6 @@ p {
 }
 
 footer {
-	border-top: 1px solid #d5d5d5;
+	border-top: 1px solid #DBD2C5;
 	font-size: 1em;
 }
