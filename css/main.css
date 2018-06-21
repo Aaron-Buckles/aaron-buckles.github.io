@@ -69,7 +69,7 @@ footer {
 {
 	display: inline;
   	margin-right: 20px;
-  	padding: 5px;
-  	border: 5px double #A63A50;
+  	padding: 10px;
+  	border: 4px solid #A63A50;
   	border-radius: 25px;
 }
