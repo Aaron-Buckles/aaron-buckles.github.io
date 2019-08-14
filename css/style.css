@@ -1,7 +1,9 @@
 body {
   margin: 5vw;
   font-family: "Merriweather", serif;
-  background-color: #FAF8F4;
+  font-size: 1.9vw;
+  color: #d1d1d1;
+  background-color: #131313;
 }
 
 h1 {
@@ -13,19 +15,17 @@ h1 {
 h2 {
   font-size: 3vw;
   font-family: "Merriweather", serif;
-  border-top: 1px solid #DBD2C5;
+  border-top: 1px solid #A63A50;
   padding-top: 20px;
 }
 
 p {
-  font-size: 1.9vw;
   line-height: 1.5em;
-  color: #333;
 }
 
 a {
   text-decoration: none;
-  color: #999;
+  color: #d1d1d1;
   font-size: 1.9vw;
 }
 
@@ -55,33 +55,33 @@ nav .flex-list {
           justify-content: center;
 }
 
-.nav-item {
+.link-button {
   margin: 10px;
 }
 
-.nav-item a {
+.link-button a {
   text-decoration: none;
-  color: #999;
+  color: #A63A50;
   font-size: 1.7vw;
   padding: 1vw;
+  border: 0 solid 0;
+  border-radius: 2vw;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.nav-item a:hover, .nav-item a:focus {
+.link-button a:hover, .link-button a:focus {
   outline: none;
   text-decoration: none;
-  -webkit-box-shadow: 0 0 1vw 0.5vw #A63A50 inset;
-          box-shadow: 0 0 1vw 0.5vw #A63A50 inset;
-  color: #A63A50;
-  border: 0 solid 0;
-  border-radius: 2vw;
+  background-color: #A63A50;
+  color: #d1d1d1;
+  border-radius: 0.5vw;
 }
 
 img {
   max-height: 100%;
   max-width: 100%;
-  border: 5px double #DBD2C5;
+  border: 5px double #A63A50;
   border-radius: 5px;
 }
 
