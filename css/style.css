@@ -24,7 +24,7 @@ p {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
   color: #d1d1d1;
   font-size: 1.9vw;
 }
