@@ -1,12 +1,12 @@
 // ===== Colors =====
 $backgroundColor: rgb(19, 19, 19);
 $mainColor: rgb(209, 209, 209);
-$accentColor: #A63A50;
+$accentColor: #008cc5;
 
 // ===== Fonts =====
 // Font Families
-$mainFont: 'Merriweather', serif;
-$navFont: 'Open Sans', 'Helvetica', 'Arial', 'Sans-Serif';
+$mainFont: "Merriweather", serif;
+$navFont: "Open Sans", "Helvetica", "Arial", "Sans-Serif";
 // Font Sizes
 $h1FontSize: 5vw;
 $h2FontSize: 3vw;
@@ -15,104 +15,120 @@ $navFontSize: 1.7vw;
 // $mobileFontMultiplier: 0.5;
 
 body {
-	margin: 5vw;
-	font-family: $mainFont;
-	font-size: $mainFontSize;
-	color: $mainColor;
-	background-color: $backgroundColor;
+  margin: 5vw;
+  font-family: $mainFont;
+  font-size: $mainFontSize;
+  color: $mainColor;
+  background-color: $backgroundColor;
 }
 
 // ===== Typography =====
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $mainFont;
+}
+
 h1 {
-	font-size: $h1FontSize;
-	font-family: $mainFont;
-	font-style: italic;
+  font-size: $h1FontSize;
+  font-style: italic;
 }
 
 h2 {
-	font-size: $h2FontSize;
-	font-family: $mainFont;
-	border-top: 1px solid $accentColor;
-	padding-top: 20px;
+  font-size: $h2FontSize;
+  border-top: 0.5vw solid $accentColor;
+  padding-top: 20px;
 }
 
 p {
-	line-height: 1.5em;
+  line-height: 1.5em;
 }
 
 a {
-	text-decoration: underline;
-	color: $mainColor;
-	font-size: $mainFontSize;
+  text-decoration: underline;
+  color: $mainColor;
+  font-size: $mainFontSize;
 
-	&:hover {
-		text-decoration: underline;
-		color: $accentColor;
-	}
+  &:hover {
+    text-decoration: underline;
+    color: $accentColor;
+  }
 
-	i {
-		margin-right: 5px;
-	}
+  i {
+    margin-right: 5px;
+  }
 }
 
 // ===== Flex Container =====
 .flex-list {
-	list-style: none;
-	display: flex;
-	flex-wrap: wrap;
-	padding: 0;
-	margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
 }
 
 nav .flex-list {
-	justify-content: center;
+  justify-content: center;
 }
 
 // ===== Link Button =====
 .link-button {
-	margin: 10px;
+  margin: 10px;
 
-	a {
-		text-decoration: none;
-		color: $accentColor;
-		font-size: $navFontSize;
-		padding: 1vw;
-		border: 0 solid 0;
-		border-radius: 2vw;
-		transition: 0.3s;
-	
-		&:hover, &:focus {
-			outline: none;
-			text-decoration: none;
-			// box-shadow: 0 0 1vw 0.5vw $accentColor inset;
-			background-color: $accentColor;
-			color: $mainColor;
-			border-radius: 0.5vw;
-		}
-	}
+  a {
+    text-decoration: none;
+    color: $accentColor;
+    font-size: $navFontSize;
+    padding: 1vw;
+    border: 0 solid 0;
+    border-radius: 2vw;
+    transition: 0.3s;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      text-decoration: none;
+      // box-shadow: 0 0 1vw 0.5vw $accentColor inset;
+      background-color: $accentColor;
+      color: $mainColor;
+      border-radius: 0.5vw;
+    }
+  }
 }
 
 // ===== Images =====
 img {
-	max-height: 100%;
-	max-width: 100%;
-	border: 5px double $accentColor;
-	border-radius: 5px;
+  max-height: 100%;
+  max-width: 100%;
+  border: 5px double $accentColor;
+  border-radius: 5px;
 }
 
 // ===== Skills =====
 .skills-item {
-	font-size: $mainFontSize;
-	font-weight: bold;
-	padding: 10px;
-	margin: 5px;
-	border: 0.5vw solid $accentColor;
-	border-radius: 25px;
+  font-size: $mainFontSize;
+  font-weight: bold;
+  padding: 10px;
+  margin: 5px;
+  border: 0.5vw solid $accentColor;
+  border-radius: 25px;
 }
 
 // ===== Media =====
 @media (max-width: 500px) {
-	.nav-item a {
-		font-size: 0.7em;
-	}
+  .nav-item a {
+    font-size: 0.7em;
+  }
+}
+
+@media (min-width: 500px) {
+  .double-container {
+    display: inline-grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 15px;
+  }
 }

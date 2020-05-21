@@ -6,16 +6,23 @@ body {
   background-color: #131313;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Merriweather", serif;
+}
+
 h1 {
   font-size: 5vw;
-  font-family: "Merriweather", serif;
   font-style: italic;
 }
 
 h2 {
   font-size: 3vw;
-  font-family: "Merriweather", serif;
-  border-top: 1px solid #A63A50;
+  border-top: 0.5vw solid #008cc5;
   padding-top: 20px;
 }
 
@@ -31,7 +38,7 @@ a {
 
 a:hover {
   text-decoration: underline;
-  color: #A63A50;
+  color: #008cc5;
 }
 
 a i {
@@ -61,7 +68,7 @@ nav .flex-list {
 
 .link-button a {
   text-decoration: none;
-  color: #A63A50;
+  color: #008cc5;
   font-size: 1.7vw;
   padding: 1vw;
   border: 0 solid 0;
@@ -73,7 +80,7 @@ nav .flex-list {
 .link-button a:hover, .link-button a:focus {
   outline: none;
   text-decoration: none;
-  background-color: #A63A50;
+  background-color: #008cc5;
   color: #d1d1d1;
   border-radius: 0.5vw;
 }
@@ -81,7 +88,7 @@ nav .flex-list {
 img {
   max-height: 100%;
   max-width: 100%;
-  border: 5px double #A63A50;
+  border: 5px double #008cc5;
   border-radius: 5px;
 }
 
@@ -90,13 +97,23 @@ img {
   font-weight: bold;
   padding: 10px;
   margin: 5px;
-  border: 0.5vw solid #A63A50;
+  border: 0.5vw solid #008cc5;
   border-radius: 25px;
 }
 
 @media (max-width: 500px) {
   .nav-item a {
     font-size: 0.7em;
+  }
+}
+
+@media (min-width: 500px) {
+  .double-container {
+    display: -ms-inline-grid;
+    display: inline-grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    grid-column-gap: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */
