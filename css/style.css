@@ -1,7 +1,7 @@
 body {
   margin: 5vw;
   font-family: "Merriweather", serif;
-  font-size: 1.9vw;
+  font-size: 18px;
   color: #d1d1d1;
   background-color: #131313;
 }
@@ -16,13 +16,13 @@ h6 {
 }
 
 h1 {
-  font-size: 5vw;
+  font-size: 34px;
   font-style: italic;
 }
 
 h2 {
-  font-size: 3vw;
-  border-top: 0.5vw solid #008cc5;
+  font-size: 28px;
+  border-top: 5px solid #008cc5;
   padding-top: 20px;
 }
 
@@ -33,7 +33,7 @@ p {
 a {
   text-decoration: underline;
   color: #d1d1d1;
-  font-size: 1.9vw;
+  font-size: 18px;
 }
 
 a:hover {
@@ -69,7 +69,7 @@ nav .flex-list {
 .link-button a {
   text-decoration: none;
   color: #008cc5;
-  font-size: 1.7vw;
+  font-size: 20px;
   padding: 1vw;
   border: 0 solid 0;
   border-radius: 2vw;
@@ -88,23 +88,17 @@ nav .flex-list {
 img {
   max-height: 100%;
   max-width: 100%;
-  border: 5px double #008cc5;
+  border: 5px solid #008cc5;
   border-radius: 5px;
 }
 
 .skills-item {
-  font-size: 1.9vw;
+  font-size: 18px;
   font-weight: bold;
   padding: 10px;
   margin: 5px;
-  border: 0.5vw solid #008cc5;
+  border: 5px solid #008cc5;
   border-radius: 25px;
-}
-
-@media (max-width: 500px) {
-  .nav-item a {
-    font-size: 0.7em;
-  }
 }
 
 @media (min-width: 500px) {

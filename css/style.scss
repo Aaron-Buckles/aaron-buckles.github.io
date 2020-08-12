@@ -8,11 +8,14 @@ $accentColor: #008cc5;
 $mainFont: "Merriweather", serif;
 $navFont: "Open Sans", "Helvetica", "Arial", "Sans-Serif";
 // Font Sizes
-$h1FontSize: 5vw;
-$h2FontSize: 3vw;
-$mainFontSize: 1.9vw;
-$navFontSize: 1.7vw;
-// $mobileFontMultiplier: 0.5;
+$h1FontSize: 34px;
+$h2FontSize: 28px;
+$mainFontSize: 18px;
+$navFontSize: 20px;
+$mobileFontMultiplier: 0.5;
+
+// ===== Borders =====
+$borderWidth: 5px;
 
 body {
   margin: 5vw;
@@ -39,7 +42,7 @@ h1 {
 
 h2 {
   font-size: $h2FontSize;
-  border-top: 0.5vw solid $accentColor;
+  border-top: $borderWidth solid $accentColor;
   padding-top: 20px;
 }
 
@@ -104,7 +107,7 @@ nav .flex-list {
 img {
   max-height: 100%;
   max-width: 100%;
-  border: 5px double $accentColor;
+  border: $borderWidth solid $accentColor;
   border-radius: 5px;
 }
 
@@ -114,17 +117,11 @@ img {
   font-weight: bold;
   padding: 10px;
   margin: 5px;
-  border: 0.5vw solid $accentColor;
+  border: $borderWidth solid $accentColor;
   border-radius: 25px;
 }
 
 // ===== Media =====
-@media (max-width: 500px) {
-  .nav-item a {
-    font-size: 0.7em;
-  }
-}
-
 @media (min-width: 500px) {
   .double-container {
     display: inline-grid;
